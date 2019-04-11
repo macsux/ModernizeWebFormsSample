@@ -12,16 +12,16 @@ namespace ModernizeWebFormsSample.Auth.New
         protected void Application_Start(object sender, EventArgs e)
         {
             // create default user
-            var defaultUser = Membership.GetUserNameByEmail("test@user.local");
-            if (defaultUser == null)
-            {
-                MembershipCreateStatus status;
-                Membership.CreateUser("test@user.local", "Pa$$w0rd", "test@user.local", "question", "answer", true, out status);
-                if (status != MembershipCreateStatus.Success)
-                {
-                    throw new Exception($"Couldn't create a default user! {status}");
-                }
-            }
+//            var defaultUser = Membership.GetUserNameByEmail("test@user.local");
+//            if (defaultUser == null)
+//            {
+//                MembershipCreateStatus status;
+//                Membership.CreateUser("test@user.local", "Pa$$w0rd", "test@user.local", "question", "answer", true, out status);
+//                if (status != MembershipCreateStatus.Success)
+//                {
+//                    throw new Exception($"Couldn't create a default user! {status}");
+//                }
+//            }
         }
     }
 }
